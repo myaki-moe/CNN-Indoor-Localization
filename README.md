@@ -111,6 +111,23 @@ By reducing the number of input signals from 51 to 10, It can be found that smal
 
 TBD
 
+## Running and Code
+
+### Pypi Requisites
+
+- `numpy`
+- `pandas`
+- `tables`
+- `tensorflow`
+
+### Dataset Modification
+
+Run `rssi_representation.py` to generate a dataset that remove the inefficient data and replace the header with the list index for training and validation.
+
+### Training and Validation
+
+Run `train*.py` (all the three files are ok) to create CNN model and test it using the vaildation dataset.
+
 ## References
 
 1. Alejandro Pasos Ruiz, Michael Flynn, James Large, Matthew Middlehurst, and Anthony Bagnall, "The great multivariate time series classification bake off: a review and experimental evaluation of recent algorithmic advances," Data Mining and Knowledge Discussions, vol. 35, no. 2, pp. 401-449, Mar. 2021.
