@@ -8,32 +8,32 @@ For large-scale multi-building and multi-layer indoor localization based on a si
 
 * Statistics of the RSSIs in UJIIndoorLoc database
 
-* * Only few APs are detected at a given reference point among the campus-wide 520 APs.
+    * Only few APs are detected at a given reference point among the campus-wide 520 APs.
 
-* * * This is a typical characteristic of multi-building and multi-floor Wi-Fi RSSI datasets unlike those of large-scale but open-space structures like arenas, auditoriums, and halls where there are no hierarchical structures.
+        * This is a typical characteristic of multi-building and multi-floor Wi-Fi RSSI datasets unlike those of large-scale but open-space structures like arenas, auditoriums, and halls where there are no hierarchical structures.
 
-* * There are even reference points without any RSSI, which could cause issues during the prediction.
+    * There are even reference points without any RSSI, which could cause issues during the prediction.
 
-* * * They should be removed during the preprocessing.
+        * They should be removed during the preprocessing.
 
-* * Inconsistencies in RSSI reported by different HWs (e.g., Samsung vs Xiaomi) and OSs (e.g., Android
+    * Inconsistencies in RSSI reported by different HWs (e.g., Samsung vs Xiaomi) and OSs (e.g., Android
 vs iOS) in different units and scales.
 
 * Possible scalable representation of RSSIs
 
-* * Based on stacked autoencoders (SAEs).
+    * Based on stacked autoencoders (SAEs).
 
-* * * Depends on the statistics of a training set.
+        * Depends on the statistics of a training set.
 
-* * Based on ordering of RSSIs.
+    * Based on ordering of RSSIs.
 
-* * * Note that sorting numbers is one of the hardest tasks for artificial neural networks.
+        * Note that sorting numbers is one of the hardest tasks for artificial neural networks.
 
-* * * Further truncation based on RSSI values (e.g., K-strongest selection).
+        * Further truncation based on RSSI values (e.g., K-strongest selection).
 
-* * * Percentage of total energy (e.g., 90% of total energy; similar to FM).
+        * Percentage of total energy (e.g., 90% of total energy; similar to FM).
 
-* * * Threshold (e.g., discard RSSIs less than -90)
+        * Threshold (e.g., discard RSSIs less than -90)
 
 ## Research questions
 
