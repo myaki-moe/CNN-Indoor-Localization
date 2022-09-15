@@ -35,7 +35,7 @@ vs iOS) in different units and scales.
 
         * Threshold (e.g., discard RSSIs less than -90)
 
-## Research questions
+## Research Questions
 
 * How can we represent in a scalable way large-dimensional RSSIs (e.g., 520-dimensional vectors in the UJIIndoorLoc database) as inputs to a DNN model for multi-building and multi-floor indoor localization?
 
@@ -111,7 +111,7 @@ By reducing the number of input signals from 51 to 10, It can be found that smal
 
 TBD
 
-## Running and Code
+## Running The Code
 
 ### Pypi Requisites
 
